@@ -1,0 +1,83 @@
+// Importa aquí tus fuentes.
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+
+// Reemplaza aquí por el nombre de tu fuente.
+$font-primary: 'Arvo', serif;
+$font-secondary: 'Open Sans', sans-serif;
+
+// Reemplaza estos valores por tus tamaños de fuente.
+$font-size-small: 20px;
+$font-size-medium: 30px;
+$font-size-large: 35px;
+$font-size-extra-large: 50px;
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+h1 {
+  color: $color-white;
+  font-family: $font-primary;
+  font-size: $font-size-extra-large;
+  font-weight: 300;
+  line-height: 1;
+
+  @include for-size(m) {
+    font-size: $font-size-extra-large;
+  }
+}
+
+h2 {
+  color: $color-white;
+  font-family: $font-primary;
+  font-size: $font-size-medium;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+h3 {
+  color: $color-black;
+  font-family: $font-primary;
+  font-size: $font-size-large;
+  font-weight: 300;
+  line-height: 1.5;
+
+  &.h3--primary {
+    color: $color-primary;
+  }
+}
+
+h4 {
+  color: $color-primary;
+  font-family: $font-primary;
+  font-size: $font-size-medium;
+  font-weight: 300;
+  line-height: 1.5;
+
+  &.h4--dark {
+    color: $color-black;
+  }
+}
+
+h5 {
+  color: $color-black;
+  font-family: $font-secondary;
+  font-size: $font-size-medium;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+p {
+  font-family: $font-secondary;
+  font-size: $font-size-small;
+  line-height: 1.5;
+  margin: 0;
+
+  &.p--light {
+    color: $color-white;
+  }
+}

@@ -1,0 +1,11 @@
+@import '../../base/scss/base.scss';
+
+.ContactBox {
+  border: 3px solid $color-black;
+  padding: $padding-small 0 20px;
+  text-align: center;
+
+  &-block {
+    margin: 0 0 20px;
+  }
+}

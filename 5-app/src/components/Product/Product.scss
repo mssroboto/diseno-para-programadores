@@ -1,0 +1,12 @@
+@import '../../base/scss/base.scss';
+
+.Product {
+  border: 3px solid $color-black;
+  padding: $padding-small;
+  text-align: center;
+
+  &-title,
+  &-description {
+    margin-bottom: $padding-small;
+  }
+}

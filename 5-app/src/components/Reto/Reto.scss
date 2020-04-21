@@ -1,0 +1,23 @@
+@import '../../base/scss/base.scss';
+
+.Reto {
+  background-color: $color-secondary;
+  padding: $padding-large $padding-small;
+  text-align: center;
+
+  &-content {
+    margin: $padding-small auto;
+
+    @include for-size(m) {
+      max-width: 70%;
+    }
+
+    @include for-size(l) {
+      max-width: 50%;
+    }
+  }
+
+  &-icons button {
+    margin-right: 25px;
+  }
+}

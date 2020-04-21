@@ -1,0 +1,66 @@
+
+@import '../../base/scss/base.scss';
+
+.Cta {
+  color: $color-black;
+  cursor: pointer;
+  transition: transform .4s ease-in-out;
+
+  &--primary,
+  &--secondary {
+    background-color: $color-primary;
+    border: 3px solid $color-secondary;
+    color: $color-black;
+    padding: 10px 20px;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-black;
+      border: 3px solid $color-primary;
+      color: $color-primary;
+      transform: translateY(-5px);
+    }
+  }
+
+  &--primary {
+    font-family: $font-primary;
+    font-size: 25px;
+  }
+
+  &--secondary {
+    font-family: $font-secondary;
+    font-size: $font-size-small;
+  }
+
+  &--terciary,
+  &--cuaternary {
+    border-radius: 50%;
+    height: 70px;
+    padding: 5px;
+    width: 70px;
+
+    &:active,
+    &:focus,
+    &:hover {
+      transform: rotate(-20deg);
+    }
+  }
+
+  &--terciary {
+    background-color: $color-white;
+    border: 3px solid $color-black;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+
+  &--cuaternary {
+    background-color: transparent;
+    border: 3px solid $color-primary;
+    color: $color-primary;
+  }
+}

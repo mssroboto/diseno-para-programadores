@@ -1,0 +1,62 @@
+// Breakpoint variables.
+$xs: 360px;
+$s: 440px;
+$m: 768px;
+$l: 1280px;
+$xl: 1440px;
+
+// Mixin para manejar distintos breakpoints.
+@mixin for-size($size) {
+  @if $size == xs {
+    @media (max-width: $s) { @content; }
+  } @else if $size == m {
+    @media (min-width: $m) { @content; }
+  } @else if $size == l {
+    @media (min-width: $l) { @content; }
+  } @else if $size == xl {
+    @media (min-width: $xl) { @content; }
+  }
+}
+
+// Configuración de las columnas.
+:root {
+  --columns: 4;
+  --column-gap: 6.67%;
+
+  @include for-size(m) {    
+    --columns: 12;
+    --column-gap: 2.27%;
+  }
+
+  @include for-size(l) {    
+    --columns: 12;
+    --column-gap: 2.19%;
+  }
+}
+
+// Configuración de la grilla.
+.grid {
+  margin: 0 16px;
+
+  @include for-size(m) {    
+    margin: 0 32px;
+  }
+
+  @include for-size(l) {    
+    margin: 0 80px;
+  }
+
+  @include for-size(xl) {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+}
+
+// Configuración de la grilla y la subgrilla.
+.grid,
+.subgrid {
+  display: grid;
+  grid-column-gap: var(--column-gap);
+  grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+  position: relative;
+}

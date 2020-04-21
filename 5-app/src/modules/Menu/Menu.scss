@@ -1,0 +1,49 @@
+@import '../../base/scss/base.scss';
+
+.Menu {
+  padding: $padding-large 0;
+  text-align: center;
+
+  &-tabs {
+    display: flex;
+    justify-content: center;
+    padding: $padding-small 0;
+
+    .Cta {
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &-products {
+    .Product {
+      grid-column: 1/-1;
+      margin-bottom: $padding-small;
+      
+      @include for-size(l) {
+        &:nth-child(1) {
+          grid-column: 1/5;
+        }
+
+        &:nth-child(2) {
+          grid-column: 5/9;
+        }
+
+        &:nth-child(3) {
+          grid-column: 9/13;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: $padding-large;
+
+        @include for-size(l) {
+          margin-bottom: $padding-small;
+        }
+      }
+    }
+  }
+}
