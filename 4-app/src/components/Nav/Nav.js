@@ -14,7 +14,7 @@ function Nav(props) {
   return (
     <div className={type}>
       <div className="Nav-button">
-        <Cta type="cuaternary" icon={props.icon} iconType="secondary"/>
+        <Cta type="cuaternary" icon={props.icon} iconType="secondary" />
       </div>
       <ul className="Nav-list">
         {list()}

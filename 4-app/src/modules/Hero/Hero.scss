@@ -1,8 +1,8 @@
-@import '../../base/scss/base.scss';
+@import "../../base/scss/base.scss";
 
 .Hero {
   background-color: $color-cuaternary;
-  background-image: url('../../images/bg-small.png');
+  background-image: url("../../images/bg-small.png");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,17 +11,17 @@
   text-align: center;
 
   @include for-size(m) {
-    background-image: url('../../images/bg-large.png');
+    background-image: url("../../images/bg-large.png");
   }
 
   &:after {
-    content: '';
+    content: "";
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba($color-black, .7);
+    background-color: rgba($color-black, 0.7);
     z-index: 1;
   }
 

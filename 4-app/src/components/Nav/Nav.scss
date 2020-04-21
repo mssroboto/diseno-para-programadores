@@ -1,4 +1,4 @@
-@import '../../base/scss/base.scss';
+@import "../../base/scss/base.scss";
 
 .Nav {
   $self: &;
@@ -38,7 +38,7 @@
     font-weight: 300;
     line-height: 2;
     margin-right: $padding-small;
-    transition: transform .4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 
     &:active,
     &:focus,

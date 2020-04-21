@@ -7,7 +7,7 @@ function ContactBox(props) {
       <div className="ContactBox-block">
         <h4 className="h4--dark">Teléfono.</h4>
         <p className="ContactBox-description">{props.phone}</p>
-      </div> 
+      </div>
       <div className="ContactBox-block">
         <h4 className="h4--dark">Dirección.</h4>
         <p className="ContactBox-description">{props.address}</p>

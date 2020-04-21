@@ -67,58 +67,58 @@ class StyleGuide extends Component {
           <h3 className="StyleGuide-title">Botones.</h3>
           <h4 className="StyleGuide-subtitle h4--dark">Cambia los estilos de los botones en Cta.scss</h4>
           <div className="StyleGuide-ctas StyleGuide-wrapper">
-            <Cta type="primary" label="Primary!"/>
-            <Cta type="secondary" label="Secondary"/>
-            <Cta type="terciary" icon="hamburger" iconType="primary"/>
-            <Cta type="cuaternary" icon="nav" iconType="secondary"/>
-            <Cta type="cuaternary" icon="facebook" iconType="primary"/>
+            <Cta type="primary" label="Primary!" />
+            <Cta type="secondary" label="Secondary" />
+            <Cta type="terciary" icon="hamburger" iconType="primary" />
+            <Cta type="cuaternary" icon="nav" iconType="secondary" />
+            <Cta type="cuaternary" icon="facebook" iconType="primary" />
           </div>
         </div>
         <div className="grid StyleGuide-section">
           <h3 className="StyleGuide-title">Quote.</h3>
           <div className="StyleGuide-wrapper">
-            <Quote type="primary" content="Hamburguesas de pura carne con el toque secreto."/>
+            <Quote type="primary" content="Hamburguesas de pura carne con el toque secreto." />
           </div>
         </div>
         <div className="grid StyleGuide-section">
           <h3 className="StyleGuide-title">Product.</h3>
           <div className="StyleGuide-wrapper subgrid">
             <div className="StyleGuide-product-1">
-              <Product title="Steam sencilla" content="1 lb de res con queso, verdura y pan." price="$10.00"/>
+              <Product title="Steam sencilla" content="1 lb de res con queso, verdura y pan." price="$10.00" />
             </div>
             <div className="StyleGuide-product-2">
-              <Product title="Steam sencilla" content="1 lb de res con queso, verdura y pan." price="$10.00"/>
+              <Product title="Steam sencilla" content="1 lb de res con queso, verdura y pan." price="$10.00" />
             </div>
             <div className="StyleGuide-product-3">
-              <Product title="Steam sencilla" content="1 lb de res con queso, verdura y pan." price="$10.00"/>
+              <Product title="Steam sencilla" content="1 lb de res con queso, verdura y pan." price="$10.00" />
             </div>
           </div>
         </div>
         <div className="grid StyleGuide-section">
           <h3 className="StyleGuide-title">Reto.</h3>
           <div className="StyleGuide-wrapper">
-            <Reto title="#RetoSteam" content="Cuentanos en redes sociales lo que mas te gusta de steam y obtén 15% de descuento."/>
+            <Reto title="#RetoSteam" content="Cuentanos en redes sociales lo que mas te gusta de steam y obtén 15% de descuento." />
           </div>
         </div>
         <div className="grid StyleGuide-section">
           <h3 className="StyleGuide-title">Contact Box.</h3>
           <div className="StyleGuide-wrapper">
-            <ContactBox address="cra 11 # 10 Sur" phone="2338617"/>
+            <ContactBox address="cra 11 # 10 Sur" phone="2338617" />
           </div>
         </div>
         <div className="grid StyleGuide-section">
           <h3 className="StyleGuide-title">Navigation.</h3>
           <div className="StyleGuide-wrapper">
-            <Nav icon="nav" items={['Home', 'Nosotros', 'Menú', 'Promociones', 'Contacto']}/>
+            <Nav icon="nav" items={['Home', 'Nosotros', 'Menú', 'Promociones', 'Contacto']} />
             <div className="StyleGuide-bg">
-              <Nav icon="nav" type="light" items={['Home', 'Nosotros', 'Menú', 'Promociones', 'Contacto']}/>
+              <Nav icon="nav" type="light" items={['Home', 'Nosotros', 'Menú', 'Promociones', 'Contacto']} />
             </div>
           </div>
         </div>
         <div className="grid StyleGuide-section">
           <h3 className="StyleGuide-title">Hero.</h3>
           <div className="StyleGuide-wrapper">
-            <Hero title="Steam" subtitle="Hamburgesas artesanales" cta="Ver menú" icon="lightHamburger"/>
+            <Hero title="Steam" subtitle="Hamburgesas artesanales" cta="Ver menú" icon="lightHamburger" />
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ import './Hero.scss';
 function Hero(props) {
   return (
     <div className="Hero">
-      <Nav icon="nav" type="light" items={['Home', 'Nosotros', 'Menú', 'Promociones', 'Contacto']}/>
+      <Nav icon="nav" type="light" items={['Home', 'Nosotros', 'Menú', 'Promociones', 'Contacto']} />
       <div className="Hero-icon">
         <Icon icon={props.icon} type="terciary" />
       </div>

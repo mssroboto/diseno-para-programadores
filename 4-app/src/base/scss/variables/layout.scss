@@ -8,13 +8,21 @@ $xl: 1440px;
 // Mixin para manejar distintos breakpoints.
 @mixin for-size($size) {
   @if $size == xs {
-    @media (max-width: $s) { @content; }
+    @media (max-width: $s) {
+      @content;
+    }
   } @else if $size == m {
-    @media (min-width: $m) { @content; }
+    @media (min-width: $m) {
+      @content;
+    }
   } @else if $size == l {
-    @media (min-width: $l) { @content; }
+    @media (min-width: $l) {
+      @content;
+    }
   } @else if $size == xl {
-    @media (min-width: $xl) { @content; }
+    @media (min-width: $xl) {
+      @content;
+    }
   }
 }
 
@@ -23,12 +31,12 @@ $xl: 1440px;
   --columns: 4;
   --column-gap: 6.67%;
 
-  @include for-size(m) {    
+  @include for-size(m) {
     --columns: 12;
     --column-gap: 2.27%;
   }
 
-  @include for-size(l) {    
+  @include for-size(l) {
     --columns: 12;
     --column-gap: 2.19%;
   }
@@ -38,11 +46,11 @@ $xl: 1440px;
 .grid {
   margin: 0 16px;
 
-  @include for-size(m) {    
+  @include for-size(m) {
     margin: 0 32px;
   }
 
-  @include for-size(l) {    
+  @include for-size(l) {
     margin: 0 80px;
   }
 
