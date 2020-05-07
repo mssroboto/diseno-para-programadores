@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Cta from '../components/Cta/Cta';
 import Quote from '../components/Quote/Quote';
-import Reto from '../components/Reto/Reto';
+import Challenge from '../components/Challenge/Challenge';
 import Product from '../components/Product/Product';
 import ContactBox from '../components/ContactBox/ContactBox';
 import Nav from '../components/Nav/Nav';
@@ -95,9 +95,9 @@ class StyleGuide extends Component {
           </div>
         </div>
         <div className="grid StyleGuide-section">
-          <h3 className="StyleGuide-title">Reto.</h3>
+          <h3 className="StyleGuide-title">Challenge.</h3>
           <div className="StyleGuide-wrapper">
-            <Reto title="#RetoSteam" content="Cuentanos en redes sociales lo que mas te gusta de steam y obtén 15% de descuento." />
+            <Challenge title="#RetoSteam" content="Cuentanos en redes sociales lo que mas te gusta de steam y obtén 15% de descuento." />
           </div>
         </div>
         <div className="grid StyleGuide-section">

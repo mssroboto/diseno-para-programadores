@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "icon": "nav",
+    "items": [
+      {
+        "label": "Home",
+        "url": "www.google.com"
+      },
+      {
+        "label": "Nosotros",
+        "url": "www.google.com"
+      },
+      {
+        "label": "Menú",
+        "url": "www.google.com"
+      },
+      {
+        "label": "Promociones",
+        "url": "www.google.com"
+      }, 
+      {
+        "label": "Contacto",
+        "url": "www.google.com"
+      }
+    ]
+  },
+  "hero": {
+    "title": "Steam",
+    "subtitle": "Hamburgesas artesanales",
+    "cta": "Ver menú",
+    "icon": "lightHamburger"
+  },
+  "quote": {
+    "title": "Hamburguesas de pura carne con el toque secreto."
+  },
+  "menu": {
+    "title": "Menú",
+    "cta": "Ver mi pedido (2)",
+    "items": [
+      {
+        "icon": "hamburger"
+      },
+      {
+        "icon": "fries"
+      },
+      {
+        "icon": "soda"
+      },
+      {
+        "icon": "iceCream"
+      }
+    ],
+    "products": [
+      {
+        "title": "Steam sencilla",
+        "subtitle": "1 lb de res con queso, verdura y pan.",
+        "price": "$10.00"
+      },
+      {
+        "title": "Steam doble",
+        "subtitle": "1 lb de res con queso, verdura y pan.",
+        "price": "$15.00"
+      },
+      {
+        "title": "Steam especial",
+        "subtitle": "1 lb de res, tocineta, queso, verdura y pan.",
+        "price": "$20.00"
+      }
+    ]
+  },
+  "challenge": {
+    "title": "#RetoSteam",
+    "subtitle": "Cuéntanos en redes sociales lo que mas te gusta de steam y obtén 15% de descuento.",
+    "social": [
+      {
+        "icon": "facebook"
+      },
+      {
+        "icon": "instagram"
+      },
+      {
+        "icon": "tiktok"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contáctanos.",
+    "items": [
+      {
+        "title": "Teléfono",
+        "subtitle": "2338617"
+      },
+      {
+        "title": "Dirección",
+        "subtitle": "cra 11 # 10 Sur"
+      }
+    ]
+  }
+}

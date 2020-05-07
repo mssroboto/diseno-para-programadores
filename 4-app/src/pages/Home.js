@@ -1,23 +1,29 @@
 import React, { Component } from 'react';
+import Challenge from '../components/Challenge/Challenge';
+import Contact from '../modules/Contact/Contact';
+import Hero from '../modules/Hero/Hero';
+import Menu from '../modules/Menu/Menu';
+import Nav from '../components/Nav/Nav';
 import Quote from '../components/Quote/Quote';
-import Reto from '../components/Reto/Reto';
-import ContactBox from '../components/ContactBox/ContactBox';
-import Hero from '../modules/Hero/Hero'
-import Menu from '../modules/Menu/Menu'
 import './Home.scss';
 
 class Home extends Component {
   render() {
+    const content = this.props.content;
+    const cssClass = 'Home';
+    const uiConfig = {
+      'nav': 'light',
+      'quote': 'primary'
+    }
+
     return (
-      <div className="Home">
-        <Hero title="Steam" subtitle="Hamburgesas artesanales" cta="Ver menú" icon="lightHamburger" />
-        <Quote type="primary" content="Hamburguesas de pura carne con el toque secreto." />
-        <Menu title="Menu" />
-        <Reto title="#RetoSteam" content="Cuentanos en redes sociales lo que mas te gusta de steam y obtén 15% de descuento." />
-        <div className="Home-contact grid">
-          <h3 className="Home-contact-title">Contáctanos.</h3>
-          <ContactBox address="cra 11 # 10 Sur" phone="2338617" />
-        </div>
+      <div className={cssClass}>
+        <Nav content={content.nav} type={uiConfig.nav} />
+        <Hero content={content.hero} />
+        <Quote content={content.quote} type={uiConfig.quote} />
+        <Menu content={content.menu} />
+        <Challenge content={content.challenge} />
+        <Contact content={content.contact} />
       </div>
     );
   }

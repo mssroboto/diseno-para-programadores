@@ -1,6 +1,6 @@
-@import "../../base/scss/base.scss";
+@import "../../scss/base.scss";
 
-.Reto {
+.Challenge {
   background-color: $color-secondary;
   padding: $padding-large $padding-small;
   text-align: center;
@@ -17,7 +17,12 @@
     }
   }
 
-  &-icons button {
+  &-items {
+    list-style: none;
+  }
+
+  &-social-item {
+    display: inline-block;
     margin-right: 25px;
   }
 }

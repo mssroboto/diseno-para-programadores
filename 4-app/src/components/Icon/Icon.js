@@ -2,16 +2,16 @@ import React from 'react';
 import facebook from '../../images/facebook.svg';
 import fries from '../../images/fries.svg';
 import hamburger from '../../images/hamburger.svg';
-import lightHamburger from '../../images/light-hamburger.svg';
 import iceCream from '../../images/ice-cream.svg';
 import instagram from '../../images/instagram.svg';
+import lightHamburger from '../../images/light-hamburger.svg';
 import nav from '../../images/nav.svg';
 import soda from '../../images/soda.svg';
 import tiktok from '../../images/tiktok.svg';
 import './Icon.scss';
 
 function Icon(props) {
-  const type = `Icon Icon--${props.type}`;
+  const cssClass = 'Icon';
   const setIcon = (() => {
     if (props.icon === 'instagram') {
       return instagram
@@ -51,7 +51,7 @@ function Icon(props) {
   })
 
   return (
-    <img className={type} src={setIcon()} alt={props.icon} />
+    <img className={`${cssClass} ${cssClass}--${props.type}`} src={setIcon()} alt={props.icon} />
   );
 }
 

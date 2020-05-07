@@ -4,21 +4,44 @@ import Product from '../../components/Product/Product';
 import './Menu.scss';
 
 function Menu(props) {
+  const content = props.content;
+  const cssClass = 'Menu';
+  const uiConfig = {
+    'ctaTab': 'terciary',
+    'ctaIcon': 'primary',
+    'cta': 'secondary'
+  }
+
+  const Tabs = (() => {
+    return content.items.map((item, index) => {
+      return(
+        <li key={index} className={`${cssClass}-item`}>
+          <Cta type={uiConfig.ctaTab} icon={item.icon} iconType={uiConfig.ctaIcon}/>
+        </li>
+      )
+    })
+  })();
+
+  const Products = (() => {
+    return content.products.map((product, index) => {
+      return(
+        <li key={index} className={`${cssClass}-product`}>
+          <Product content={product} />
+        </li>
+      )
+    })
+  })();
+
   return (
-    <div className="Menu">
-      <h3>{props.title}</h3>
-      <div className="Menu-tabs">
-        <Cta type="terciary" icon="hamburger" iconType="primary"/>
-        <Cta type="terciary" icon="fries" iconType="primary"/>
-        <Cta type="terciary" icon="soda" iconType="primary"/>
-        <Cta type="terciary" icon="iceCream" iconType="primary"/>
-      </div>
-      <div className="Menu-products grid">
-        <Product title="Steam sencilla" content="1 lb de res con queso, verdura y pan." price="$10.00"/>
-        <Product title="Steam doble" content="1 lb de res con queso, verdura y pan." price="$15.00"/>
-        <Product title="Steam especial" content="1 lb de res, tocineta, queso, verdura y pan." price="$20.00"/>
-      </div>
-      <Cta type="secondary" label="Ver mi pedido (2)" />
+    <div className={cssClass}>
+      <h3>{content.title}</h3>
+      <ul className={`${cssClass}-tabs`}>
+        {Tabs}
+      </ul>
+      <ul className={`${cssClass}-products grid`}>
+        {Products}
+      </ul>
+      <Cta type={uiConfig.cta} label={content.cta} />
     </div>
   );
 }

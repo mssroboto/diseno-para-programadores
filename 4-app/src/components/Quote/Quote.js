@@ -3,10 +3,11 @@ import './Quote.scss';
 
 function Quote(props) {
   const content = props.content;
+  const cssClass = 'Quote';
 
   return (
-    <div className="Quote">
-      <h4>{content}</h4>
+    <div className={cssClass}>
+      <h4>{content.title}</h4>
     </div>
   );
 }

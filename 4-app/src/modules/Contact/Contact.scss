@@ -1,0 +1,16 @@
+@import "../../scss/base.scss";
+
+.Contact {
+  padding: $padding-large 0;
+  text-align: center;
+
+  &-title {
+    grid-column: 1/-1;
+    text-align: center;
+  }
+
+  &-box {
+    grid-column: 1/-1;
+    margin-top: $padding-small;
+  }
+}

@@ -1,4 +1,4 @@
-@import "../../base/scss/base.scss";
+@import "../../scss/base.scss";
 
 .Hero {
   background-color: $color-cuaternary;
@@ -6,7 +6,7 @@
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: $padding-x-small $padding-x-small $padding-extra-large;
+  padding: $padding-large $padding-x-small $padding-extra-large;
   position: relative;
   text-align: center;
 
@@ -21,7 +21,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba($color-black, 0.7);
+    background-color: rgba($color-black, 0.4);
     z-index: 1;
   }
 
@@ -32,9 +32,8 @@
 
   &-title,
   &-subtitle,
-  .Nav,
-  .Icon,
-  .Cta {
+  &-icon,
+  &-cta {
     position: relative;
     z-index: 2;
   }

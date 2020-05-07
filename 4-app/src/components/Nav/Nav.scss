@@ -1,9 +1,14 @@
-@import "../../base/scss/base.scss";
+@import "../../scss/base.scss";
 
 .Nav {
   $self: &;
 
-  padding: 10px 0;
+  left: 0;
+  padding: 16px 0 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 
   a {
     color: $color-black;
@@ -48,6 +53,10 @@
 
     &:first-child {
       border-bottom: 3px solid $color-primary;
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 }

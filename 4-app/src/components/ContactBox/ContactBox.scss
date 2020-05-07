@@ -1,7 +1,8 @@
-@import "../../base/scss/base.scss";
+@import "../../scss/base.scss";
 
 .ContactBox {
   border: 3px solid $color-black;
+  list-style: none;
   padding: $padding-small 0 20px;
   text-align: center;
 

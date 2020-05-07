@@ -1,19 +1,30 @@
 import React from 'react';
 import Cta from '../../components/Cta/Cta';
-import Nav from '../../components/Nav/Nav';
 import Icon from '../../components/Icon/Icon';
 import './Hero.scss';
 
 function Hero(props) {
+  const content = props.content;
+  const cssClass = 'Hero';
+  const uiConfig = {
+    'cta': 'secondary',
+    'icon': 'terciary'
+  }
+
   return (
-    <div className="Hero">
-      <Nav icon="nav" type="light" items={['Home', 'Nosotros', 'Menú', 'Promociones', 'Contacto']} />
-      <div className="Hero-icon">
-        <Icon icon={props.icon} type="terciary" />
+    <div className={cssClass}>
+      <div className={`${cssClass}-icon`}>
+        <Icon icon={content.icon} type={uiConfig.icon} />
       </div>
-      <h1 className="Hero-title">{props.title}</h1>
-      <h2 className="Hero-subtitle">{props.subtitle}</h2>
-      <Cta type="secondary" label={props.cta} />
+      <h1 className={`${cssClass}-title`}>
+        {content.title}
+      </h1>
+      <h2 className={`${cssClass}-subtitle`}>
+        {content.subtitle}
+      </h2>
+      <div className={`${cssClass}-cta`}>
+        <Cta type={uiConfig.cta} label={content.cta} />
+      </div>
     </div>
   );
 }

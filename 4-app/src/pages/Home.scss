@@ -1,18 +1,3 @@
-@import "../base/scss/base.scss";
+@import "../scss/base.scss";
 
-.Home {
-  &-contact {
-    padding: $padding-large 0;
-    text-align: center;
-
-    &-title {
-      grid-column: 1/-1;
-      text-align: center;
-    }
-
-    .ContactBox {
-      grid-column: 1/-1;
-      margin-top: $padding-small;
-    }
-  }
-}
+.Home {}
