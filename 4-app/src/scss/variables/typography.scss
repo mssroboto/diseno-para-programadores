@@ -24,7 +24,7 @@ h1 {
   font-family: $font-primary;
   font-size: $font-size-extra-large;
   font-weight: 300;
-  line-height: 1;
+  line-height: 1.5;
 
   @include for-size(m) {
     font-size: $font-size-extra-large;

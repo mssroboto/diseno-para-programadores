@@ -4,23 +4,23 @@
     "items": [
       {
         "label": "Home",
-        "url": "www.google.com"
+        "url": "/"
       },
       {
         "label": "Nosotros",
-        "url": "www.google.com"
+        "url": "/"
       },
       {
         "label": "Menú",
-        "url": "www.google.com"
+        "url": "/"
       },
       {
         "label": "Promociones",
-        "url": "www.google.com"
+        "url": "/"
       }, 
       {
         "label": "Contacto",
-        "url": "www.google.com"
+        "url": "/"
       }
     ]
   },
@@ -93,6 +93,55 @@
       {
         "title": "Dirección",
         "subtitle": "cra 11 # 10 Sur"
+      }
+    ]
+  },
+  "styleguide": {
+    "title": "Steam burguer UI",
+    "sections": [
+      {
+        "title": "Colores",
+        "subtitle": "Añade acá tu paleta de color. Debes reemplazar las variables de color en colors.scss"
+      },
+      {
+        "title": "Tipografia",
+        "subtitle": "Añade acá tus fuentes. Debes reemplazar las variables de tipografía y los estilos de los headings en typography.scss"
+      },
+      {
+        "title": "Grid",
+        "subtitle": "Este proyecto utiliza 4 columnas en dispositivos móviles y 12 columnas a partir de tablet. Escala la página para ver como funciona."
+      },
+      {
+        "title": "Botones",
+        "subtitle": "Cambia los estilos de los botones en Cta.scss"
+      },
+      {
+        "title": "Quote",
+        "subtitle": "Este es un ejemplo del componente Quote."
+      },
+      {
+        "title": "Product",
+        "subtitle": "Este es un ejemplo del componente Product."
+      },
+      {
+        "title": "Menu",
+        "subtitle": "Este es un ejemplo del componente Menu."
+      },
+      {
+        "title": "Challenge",
+        "subtitle": "Este es un ejemplo del componente Challenge."
+      },
+      {
+        "title": "ContactBox",
+        "subtitle": "Este es un ejemplo del componente ContactBox."
+      },
+      {
+        "title": "Nav",
+        "subtitle": "Este es un ejemplo del componente Nav."
+      },
+      {
+        "title": "Hero",
+        "subtitle": "Este es un ejemplo del componente Hero."
       }
     ]
   }
