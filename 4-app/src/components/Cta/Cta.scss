@@ -47,7 +47,7 @@
   }
 
   &--terciary {
-    background-color: $color-white;
+    background-color: transparent;
     border: 3px solid $color-black;
 
     &:active,
@@ -58,8 +58,8 @@
   }
 
   &--cuaternary {
-    background-color: transparent;
-    border: 3px solid $color-primary;
-    color: $color-primary;
+    background-color: $color-primary;
+    border: 3px solid $color-black;
+    color: $color-black;
   }
 }

@@ -12,46 +12,20 @@ import './Icon.scss';
 
 function Icon(props) {
   const cssClass = 'Icon';
-  const setIcon = (() => {
-    if (props.icon === 'instagram') {
-      return instagram
-    }
-
-    if (props.icon === 'facebook') {
-      return facebook
-    }
-
-    if (props.icon === 'tiktok') {
-      return tiktok
-    }
-
-    if (props.icon === 'hamburger') {
-      return hamburger
-    }
-
-    if (props.icon === 'lightHamburger') {
-      return lightHamburger
-    }
-
-    if (props.icon === 'soda') {
-      return soda
-    }
-
-    if (props.icon === 'fries') {
-      return fries
-    }
-
-    if (props.icon === 'iceCream') {
-      return iceCream
-    }
-
-    if (props.icon === 'nav') {
-      return nav
-    }
-  })
+  const icons = {
+    'instagram': instagram,
+    'facebook': facebook,
+    'tiktok': tiktok,
+    'hamburger': hamburger,
+    'lightHamburger': lightHamburger,
+    'soda': soda,
+    'fries': fries,
+    'iceCream': iceCream,
+    'nav': nav
+  }
 
   return (
-    <img className={`${cssClass} ${cssClass}--${props.type}`} src={setIcon()} alt={props.icon} />
+    <img className={`${cssClass} ${cssClass}--${props.type}`} src={icons[props.icon]} alt={props.icon} />
   );
 }
 

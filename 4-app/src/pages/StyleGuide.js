@@ -27,17 +27,24 @@ class StyleGuide extends Component {
      * Creates the color palette component for the styleguide.
      */
     const Colors = (() => {
-      const swatches = 6;
-      const colors = [...Array(swatches).keys()];
+      const colors = [
+        '$color-white',
+        '$color-black',
+        '$color-primary',
+        '$color-secondary',
+        '$color-terciary',
+        '$color-cuaternary'
+      ];
 
       return (
-        <div className={`${cssClass}__colors subgrid`}>
-          {colors.map((index) => {
+        <div className={`${cssClass}__colors`}>
+          {colors.map((item, index) => {
             const colorClassName = `${cssClass}__color ${cssClass}__color--${index}`;
             return (
               <span
                 key={index}
                 className={colorClassName}>
+                  {item}
               </span>
             )
           })}
@@ -52,17 +59,18 @@ class StyleGuide extends Component {
       const typographyClassName = `${cssClass}__typography`;
       const titleClassName = `${typographyClassName}-title`;
       const headingClassName = `${typographyClassName}-heading`;
+      const title = 'Ejemplo de título'
 
       return (
         <div className={`${typographyClassName} subgrid`}>
           <h3 className={titleClassName}>Tipografía principal: Arvo Font Family</h3>
           <h5 className={titleClassName}>Tipografía secundaria: Open Sans</h5>
-          <h1 className={headingClassName}>Ejemplo título H1.</h1>
-          <h2 className={headingClassName}>Ejemplo título H2.</h2>
-          <h3 className={headingClassName}>Ejemplo título H3 default.</h3>
-          <h3 className={`${headingClassName} h3--primary`}>Ejemplo título primary.</h3>
-          <h4 className={headingClassName}>Ejemplo título H4.</h4>
-          <h4 className={`${headingClassName} h4--dark`}>Ejemplo título H4 dark.</h4>
+          <h1 className={headingClassName}>{`${title} h1`}</h1>
+          <h2 className={headingClassName}>{`${title} h2`}</h2>
+          <h3 className={headingClassName}>{`${title} h3`}</h3>
+          <h3 className={`${headingClassName} h3--primary`}>{`${title} h3 primary`}</h3>
+          <h4 className={headingClassName}>{`${title} h4`}</h4>
+          <h4 className={`${headingClassName} h4--dark`}>{`${title} h4 dark`}</h4>
         </div>
       )
     })();
@@ -129,8 +137,10 @@ class StyleGuide extends Component {
       return sections.map((item, index) => {
         return (
           <section key={index} className={`${cssClass}__section`}>
-            <h3 className={`${cssClass}__section-title`}>{item.title}</h3>
-            <p className={`${cssClass}__section-subtitle`}>{item.subtitle}</p>
+            <div className={`${cssClass}__masthead`}>
+              <h3 className={`${cssClass}__section-title`}>{item.title}</h3>
+              <p className={`${cssClass}__section-subtitle`}>{item.subtitle}</p>
+            </div>
             <div className={`${cssClass}__wrapper`}>
               {components[item.title.toLowerCase()]}
             </div>
